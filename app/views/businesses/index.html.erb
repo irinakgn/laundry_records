@@ -1,0 +1,61 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Businesses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>License type</th>
+      <th>License expiration date</th>
+      <th>License status</th>
+      <th>License creation date</th>
+      <th>Industry</th>
+      <th>Business name</th>
+      <th>Business name two</th>
+      <th>Address</th>
+      <th>Phone</th>
+      <th>Borough</th>
+      <th>Community board</th>
+      <th>Bin</th>
+      <th>Bbl</th>
+      <th>Nta</th>
+      <th>Census tract</th>
+      <th>Detail</th>
+      <th>Longitude</th>
+      <th>Latitude</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @businesses.each do |business| %>
+      <tr>
+        <td><%= business.license_type %></td>
+        <td><%= business.license_expiration_date %></td>
+        <td><%= business.license_status %></td>
+        <td><%= business.license_creation_date %></td>
+        <td><%= business.industry %></td>
+        <td><%= business.business_name %></td>
+        <td><%= business.business_name_two %></td>
+        <td><%= business.address %></td>
+        <td><%= business.phone %></td>
+        <td><%= business.borough %></td>
+        <td><%= business.community_board %></td>
+        <td><%= business.bin %></td>
+        <td><%= business.bbl %></td>
+        <td><%= business.nta %></td>
+        <td><%= business.census_tract %></td>
+        <td><%= business.detail %></td>
+        <td><%= business.longitude %></td>
+        <td><%= business.latitude %></td>
+        <td><%= link_to 'Show', business %></td>
+        <td><%= link_to 'Edit', edit_business_path(business) %></td>
+        <td><%= link_to 'Destroy', business, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Business', new_business_path %>

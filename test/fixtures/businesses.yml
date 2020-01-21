@@ -1,0 +1,41 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  license_type: MyString
+  license_expiration_date: 2020-01-20
+  license_status: MyString
+  license_creation_date: 2020-01-20
+  industry: MyString
+  business_name: MyString
+  business_name_two: MyString
+  address: MyString
+  phone: MyString
+  borough: MyString
+  community_board: MyString
+  bin: MyString
+  bbl: MyString
+  nta: MyString
+  census_tract: 1
+  detail: MyString
+  longitude: 
+  latitude: 
+
+two:
+  license_type: MyString
+  license_expiration_date: 2020-01-20
+  license_status: MyString
+  license_creation_date: 2020-01-20
+  industry: MyString
+  business_name: MyString
+  business_name_two: MyString
+  address: MyString
+  phone: MyString
+  borough: MyString
+  community_board: MyString
+  bin: MyString
+  bbl: MyString
+  nta: MyString
+  census_tract: 1
+  detail: MyString
+  longitude: 
+  latitude: 

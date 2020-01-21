@@ -1,0 +1,107 @@
+<%= form_with(model: business, local: true) do |form| %>
+  <% if business.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(business.errors.count, "error") %> prohibited this business from being saved:</h2>
+
+      <ul>
+        <% business.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :license_type %>
+    <%= form.text_field :license_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :license_expiration_date %>
+    <%= form.date_select :license_expiration_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :license_status %>
+    <%= form.text_field :license_status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :license_creation_date %>
+    <%= form.date_select :license_creation_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :industry %>
+    <%= form.text_field :industry %>
+  </div>
+
+  <div class="field">
+    <%= form.label :business_name %>
+    <%= form.text_field :business_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :business_name_two %>
+    <%= form.text_field :business_name_two %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.text_field :phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :borough %>
+    <%= form.text_field :borough %>
+  </div>
+
+  <div class="field">
+    <%= form.label :community_board %>
+    <%= form.text_field :community_board %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bin %>
+    <%= form.text_field :bin %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bbl %>
+    <%= form.text_field :bbl %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nta %>
+    <%= form.text_field :nta %>
+  </div>
+
+  <div class="field">
+    <%= form.label :census_tract %>
+    <%= form.number_field :census_tract %>
+  </div>
+
+  <div class="field">
+    <%= form.label :detail %>
+    <%= form.text_field :detail %>
+  </div>
+
+  <div class="field">
+    <%= form.label :longitude %>
+    <%= form.text_field :longitude %>
+  </div>
+
+  <div class="field">
+    <%= form.label :latitude %>
+    <%= form.text_field :latitude %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
